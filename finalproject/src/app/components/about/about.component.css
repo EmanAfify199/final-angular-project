@@ -1,0 +1,39 @@
+.aboutus{
+    margin: 200px 0 100px 0;
+}
+
+.h2about{
+    font-size: 4rem;
+}
+
+.img1{
+    margin-top: 100px;
+    width: 600px;
+    
+}
+
+.bara{
+    margin:100px 0 0 0!important;
+}
+.bara2{
+    font-size: 9rem;
+}
+.ourjoureny{
+    background-image: url("https://media.istockphoto.com/id/1345186050/vector/abstract-pink-blue-watercolor-galaxy-background-fantasy-rainbow-pastel-color-vector.jpg?s=612x612&w=0&k=20&c=ZlRfFfyO4QXsPXveB4o1yiXloudl_cxxOKBDDEpWFgY=");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+.aboutus2{
+    margin: 300px 0 200px 0;
+}
+
+.aboutus3{
+    margin-bottom: 100px;
+}
+
+img:hover{
+    transition: 0.3s;
+        transform: scale(1.1);
+}

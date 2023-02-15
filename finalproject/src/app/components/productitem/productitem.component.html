@@ -1,0 +1,11 @@
+
+<div class="card mycard" >
+  <img src="{{data.src}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{data.name}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text fw-bold ">Price:${{data.price}}</p>
+    <p class="card-text ">Quantity:{{data.quantity}}</p>
+    <button  class="btn mybutton"(click)="increase()">Add to cart</button>
+  </div>
+</div>

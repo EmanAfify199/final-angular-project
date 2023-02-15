@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <h2 class="text-center  formadd ">{{productId ? "Edit user":"Add new user"}}</h2>
+    </div>
+</div>
+
+<div class="col-md-6 offset-md-6 myform">
+    <div class="container">
+      
+        <div class="row ">
+            <form [formGroup]="addform" method="post" (ngSubmit)="addproduct()" >
+              
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Image source</label>
+                  <input formControlName="src" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
+                  <ng-container *ngIf="getsrc.touched" id="srcHelp" class="form-text">
+                    <p *ngIf="getsrc.hasError('required')" class="text-danger">Imgsrc is required</p>
+                  </ng-container>              
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Product name </label>
+                  <input formControlName="name" type="text" class="form-control" id="exampleInputPassword1" >
+                </div>
+                <ng-container *ngIf="getname.touched" id="nameHelp" class="form-text">
+                    <p *ngIf="getname.hasError('required')" class="text-danger">Product name is required</p>
+                  </ng-container>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Product description </label>
+                    <input formControlName="desc" type="text" class="form-control" id="exampleInputPassword1" >
+                  </div>
+                  <ng-container *ngIf="getdesc.touched" id="descHelp" class="form-text">
+                    <p *ngIf="getdesc.hasError('required')" class="text-danger">Product description is required</p>
+                  </ng-container>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Product price </label>
+                    <input formControlName="price" type="text" class="form-control" id="exampleInputPassword1" >
+                  </div>
+                  <ng-container *ngIf="getprice.touched" id="priceHelp" class="form-text">
+                    <p *ngIf="getprice.hasError('required')" class="text-danger">Product price is required</p>
+                  </ng-container>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Product quantity </label>
+                    <input formControlName="quantity" type="text" class="form-control" id="exampleInputPassword1" >
+                  </div>
+                  <ng-container *ngIf="getquantity.touched" id="quantityHelp" class="form-text">
+                    <p *ngIf="getquantity.hasError('required')" class="text-danger">Product quantity is required</p>
+                  </ng-container>
+
+                  
+                    <p *ngIf="formerror!=''" class="text-danger">some thing error</p>
+                  
+               
+                <button type="submit" class="btn btn-outline-success">{{productId ? "Edit user":"Add new user"}}</button>
+              </form>
+        </div>
+    </div>
+</div>

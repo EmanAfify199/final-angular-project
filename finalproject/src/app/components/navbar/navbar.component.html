@@ -1,0 +1,33 @@
+<div class="mynav">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" routerLink="home">FLOWERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto  ">
+              <li class="nav-item mr-3">
+                <a class="nav-link " aria-current="page" routerLink="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login as admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="login"><i class="fa-solid fa-cart-shopping"></i><span class="span1">{{data}}</span></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn mybutton" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</div>

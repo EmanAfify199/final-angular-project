@@ -1,0 +1,24 @@
+<div class="mydash ">
+    <div class="container">
+        <h2 class="text-center p-3 mb-3 ">Admin</h2>
+        <a routerLink="/formadd" class="btn btn-success mb-3">Add new product</a>
+
+        <div class="row g-3">
+            <!-- <div  class=" mycard "> -->
+            <div *ngFor="let item of allProduct" class="card  col-md-3 " >
+                <img  src="{{item.src}}" class=" card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text fw-bold ">Price:${{item.price}}</p>
+                  <p class="card-text ">Quantity:{{item.quantity}}</p>
+                  <button href="#" class="btn btn-info d-block mt-2 w-100"(click)="productDetail(item._id)">Product details</button>
+                  <a href="#" class="btn btn-warning d-block mt-2" [routerLink]="['/formadd/',item._id]">Edit product</a>
+                  <button href="#" class="btn btn-danger d-block mt-2  w-100" (click)="removeProduct(item._id)">Delete product</button>
+                </div>
+              </div>
+            <!-- </div> -->
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="product" >
+    <div class="container">
+        <h2 class="text-center">OUR PRODUCT</h2>
+        <div class="row ">
+            <app-productitem class="col-sm-6 col-md-3"
+            [data]="item"   *ngFor="let item of allProduct"
+            ></app-productitem>
+            
+        </div>
+    </div>
+</div>
